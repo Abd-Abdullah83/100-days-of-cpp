@@ -24,7 +24,7 @@
 
 ## 👨‍💻 About Me
 
-Hey! I'm **Abdullah Tahir**, a Data Science student at **FAST NUCES, Lahore** (2025–2029).  
+Hey! I'm **Abdullah **, a Data Science student at **FAST NUCES, Lahore** (2025–2029).  
 I started this challenge to sharpen my C++ skills, build a strong open-source presence, and document my learning journey publicly.
 
 Every day I commit one program — no matter how busy I am.
