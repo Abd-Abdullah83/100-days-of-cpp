@@ -64,12 +64,15 @@ Every day I commit one program — no matter how busy I am.
 │
 ├── Day001_Fraction/
 │   └── fraction.cpp
+|   └── Fraction-Output
 │
 ├── Day002_Matrix/
 │   └── matrix.cpp
+|   └── Matrix-Output
 │
 ├── Day003_Palindrome/ 
 │   └── palindrome.cpp
+|   └── Palindrome-Output
 │
 ├── Day004_Rational/ 
 │   └── rational.cpp
