@@ -69,7 +69,7 @@ Every day I commit one program — no matter how busy I am.
 │   └── matrix.cpp
 │
 ├── Day003_Palindrome/ 
-│   └── .cpp
+│   └── palindrome.cpp
 │
 ├── Day004_Rational/ 
 │   └── rational.cpp
