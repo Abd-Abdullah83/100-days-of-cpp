@@ -46,8 +46,8 @@ Every day I commit one program — no matter how busy I am.
 |-----|-------|----------|------|
 | 001 | Fraction Class | OOP · Operator Overloading | [View](Day001_Fraction/fraction.cpp) |
 | 002 | Matrix Class | OOP · Linear Algebra | [View](Day002_Matrix/matrix.cpp) |
-| 003 | Rational Numbers | OOP · Mathematics | Coming Soon |
-| 004 | Palindrome Checker | Algorithms · Strings | Coming Soon |
+| 003 | Palindrome Checker | Algorithms · Strings | [View](Day003_Palindrome/palindrome.cpp) |
+| 004 | Rational Numbers | OOP · Mathematics | Coming Soon |  
 | 005 | Stack (Array-based) | Data Structures | Coming Soon |
 | ... | ... | ... | ... |
 
