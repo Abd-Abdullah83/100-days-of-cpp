@@ -1,0 +1,73 @@
+class QueueUsingStack
+{
+    int top, size;
+    int* arr;
+public:
+    QueueUsingStack(int n)
+    {
+        top = 0;
+        size = n;
+        arr = new int[size];
+    }
+    void add(int val)                  
+    {
+        if (isfull())
+        {
+            cout << "Queue is full!" << endl;
+            return;
+        }
+        arr[top] = val;
+        top++;
+    }
+    bool isfull()
+    {
+        return top == size;
+    }
+    bool isempty()
+    {
+        return top == 0;
+    }
+    void dequeue()
+    {
+        if (isempty())
+        {
+            cout << "Queue is Already Empty!";
+            return;
+        }
+        top--;
+    }
+    int peek()
+    {
+        if (isempty())
+        {
+            cout << "Queue is Already Empty!";
+            return -1;
+        }
+        return arr[top-1];
+    }
+   
+    void enqueue(int val)
+    {
+        if (isfull())
+        {
+            cout << "Queue is full!" << endl;
+            return;
+        }
+        QueueUsingStack q = (size);
+        while (!isempty())
+        {
+            q.add(peek());
+            dequeue();
+        }
+        add(val);
+        while (!q.isempty())
+        {
+            add(q.peek());
+            q.dequeue();
+        }
+    }
+    ~QueueUsingStack()
+    {
+        delete[]arr;
+    }
+};
