@@ -1,0 +1,22 @@
+void sort(queue<int>& q)
+{
+    stack<int> s;
+    while (!q.empty())
+    {
+        if (!s.empty() and s.top() < q.front())
+        {
+            q.push(s.top());
+            s.pop();
+        }
+        else
+        {
+            s.push(q.front());
+            q.pop();
+        }
+    }
+    while (!s.empty())
+    {
+        q.push(s.top());
+        s.pop();
+    }
+}
