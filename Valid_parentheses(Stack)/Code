@@ -1,0 +1,37 @@
+void Valid_parentheses(int l,char*a)
+{
+	stack<char> s;
+	for (int i = 0; i < l; i++)
+	{
+		if (a[i] == '(' || a[i] == '{' || a[i] == '[')
+			s.push(a[i]);
+		else
+		{
+			if (s.empty())
+			{
+				cout << "Not balanced";
+			}
+			else if (a[i] == ')' and s.top() == '(' or a[i] == '}' and s.top() == '{' or a[i] == ']' and s.top() == '[')
+				s.pop();
+			else
+				cout << "Not Balanced";
+		}
+		
+	}
+	if (!s.empty())
+		cout << "Not balanced";
+	else
+		cout << "Balanced";
+}
+void rev(int l,char*a)
+{
+	stack<char> s;
+	for (int i = 0; i < l; i++)
+		s.push(a[i]);
+	for (int i = 0; i < l; i++)
+	{
+		int b = s.top();
+		a[i] = b;
+		s.pop();
+	}
+}
