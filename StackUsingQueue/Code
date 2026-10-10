@@ -1,0 +1,62 @@
+    stackusingqueue(int n)
+    {
+        capacity = n;
+        size = front = 0;
+        rear = -1;
+        arr = new int[n];
+    }
+    int peek()
+    {
+        if (isempty())
+        {
+            cout << "Stack is Already Empty!";
+            return -1;
+        }
+        return arr[front];
+    }
+    void push(int val)
+    {
+        if (isfull())
+        {
+            cout << "stack is full!";
+            return;
+        }
+        stackusingqueue q(capacity);
+        while (!isempty())
+        {
+            q.add(peek());
+            pop();
+        }
+        add(val);
+        while(!q.isempty())
+        {
+            add(q.peek());
+            q.pop();
+        }
+        
+    }
+    void add(int val)
+    {
+        rear = (rear + 1) % capacity;
+        arr[rear] = val;
+        size++;
+    }
+    void pop()
+    {
+        if (isempty())
+        {
+            cout << "Queue is Already Empty!";
+            return;
+        }
+        front = (front + 1) % capacity;
+        size--;
+    }
+    bool isempty()
+    {
+        return size == 0;
+    }
+    bool isfull()
+    {
+        return size == capacity;
+    }
+};
