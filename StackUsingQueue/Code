@@ -5,7 +5,7 @@
         rear = -1;
         arr = new int[n];
     }
-    int peek()
+    int top()
     {
         if (isempty())
         {
@@ -24,13 +24,13 @@
         stackusingqueue q(capacity);
         while (!isempty())
         {
-            q.add(peek());
+            q.add(top());
             pop();
         }
         add(val);
         while(!q.isempty())
         {
-            add(q.peek());
+            add(q.top());
             q.pop();
         }
         
