@@ -59,4 +59,8 @@
     {
         return size == capacity;
     }
+    ~stackusingqueue()
+    {
+        delete[]arr;
+    }
 };
