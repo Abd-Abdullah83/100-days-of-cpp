@@ -2,7 +2,7 @@
 
 # ⚡ 100 Days of C++
 
-### I write one C++ program every single day for 100 days. No excuses.
+### I write one C++ program every single day for 100 days.. No excuses.
 
 *Fractions · Matrices · Algorithms · OOP · Data Structures — all from scratch.*
 
